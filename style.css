@@ -1,8 +1,7 @@
 body{
-font-family: Arial, sans-serif;
+font-family:Arial, sans-serif;
 background:#f4f6f8;
 margin:0;
-padding:0;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -13,9 +12,9 @@ height:100vh;
 background:white;
 padding:30px;
 border-radius:10px;
+width:320px;
 text-align:center;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
-width:320px;
 }
 
 h2{
@@ -23,8 +22,8 @@ margin-bottom:10px;
 }
 
 .sponsored{
-color:#888;
 font-size:14px;
+color:#777;
 margin-bottom:20px;
 }
 
@@ -36,11 +35,11 @@ border-radius:6px;
 button{
 margin-top:20px;
 padding:10px 20px;
-font-size:16px;
+border:none;
 background:#0070f3;
 color:white;
-border:none;
 border-radius:6px;
+font-size:16px;
 cursor:pointer;
 }
 
@@ -50,9 +49,9 @@ cursor:not-allowed;
 }
 
 .progress{
+height:8px;
 background:#e5e5e5;
 border-radius:20px;
-height:8px;
 margin:15px 0;
 }
 

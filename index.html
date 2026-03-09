@@ -5,8 +5,17 @@
 <title>Unlock Content</title>
 <link rel="stylesheet" href="style.css">
 
-<!-- PropellerAds Popunder -->
-<script src="//plXXXXX.onclkds.com/apu.php?zoneid=XXXX"></script>
+<!-- Monetag Popunder -->
+<script>
+(function(s){
+s.dataset.zone='10705385',
+s.src='https://al5sm.com/tag.min.js'
+})
+([document.documentElement, document.body]
+.filter(Boolean)
+.pop()
+.appendChild(document.createElement('script')))
+</script>
 
 </head>
 
@@ -23,7 +32,7 @@
 <p class="sponsored">Sponsored Content</p>
 
 <div class="ad-box">
-<img src="https://via.placeholder.com/300x250" alt="Ad Banner">
+<img src="https://via.placeholder.com/300x250">
 </div>
 
 <p>Please wait <span id="timer">12</span> seconds</p>
@@ -33,6 +42,8 @@
 </div>
 
 <script>
+
+localStorage.setItem("adgate_step1","true");
 
 let timeLeft = 12;
 
