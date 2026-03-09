@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unlock Content</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- PropellerAds Popunder -->
+<script src="//plXXXXX.onclkds.com/apu.php?zoneid=XXXX"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Step 1 of 2</h2>
+
+<div class="progress">
+<div class="bar" style="width:50%"></div>
+</div>
+
+<p class="sponsored">Sponsored Content</p>
+
+<div class="ad-box">
+<img src="https://via.placeholder.com/300x250" alt="Ad Banner">
+</div>
+
+<p>Please wait <span id="timer">12</span> seconds</p>
+
+<button id="continueBtn" disabled>Continue</button>
+
+</div>
+
+<script>
+
+let timeLeft = 12;
+
+let countdown = setInterval(function(){
+
+timeLeft--;
+
+document.getElementById("timer").innerText = timeLeft;
+
+if(timeLeft <= 0){
+
+clearInterval(countdown);
+
+document.getElementById("continueBtn").disabled = false;
+
+}
+
+},1000);
+
+document.getElementById("continueBtn").onclick = function(){
+
+window.location = "step2.html";
+
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Step</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Step 2 of 2</h2>
+
+<div class="progress">
+<div class="bar" style="width:100%"></div>
+</div>
+
+<p class="sponsored">Final Sponsored Content</p>
+
+<p>Please wait <span id="timer">10</span> seconds</p>
+
+<button id="finishBtn" disabled>Unlock Content</button>
+
+</div>
+
+<script>
+
+let timeLeft = 10;
+
+let countdown = setInterval(function(){
+
+timeLeft--;
+
+document.getElementById("timer").innerText = timeLeft;
+
+if(timeLeft <= 0){
+
+clearInterval(countdown);
+
+document.getElementById("finishBtn").disabled = false;
+
+}
+
+},1000);
+
+document.getElementById("finishBtn").onclick = function(){
+
+// Monetag smartlink first
+window.location = "https://mnegl.com/YOURSMARTLINK";
+
+};
+
+// optional redirect after Monetag
+setTimeout(function(){
+
+window.location = "https://t.me/YOURBOT?start=unlock";
+
+},15000);
+
+</script>
+
+</body>
+</html>
